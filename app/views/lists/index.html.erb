@@ -5,11 +5,22 @@
   </div>
 </div>
 
+<div class="container">
+
+
+
+
 
 <% @lists.each do |list| %>
+<div class="card" style="width: 18rem;">
+<div class="card-body">
 <%= list.name %>
+</div>
 <%= link_to "show details", list_path(list)  %>
-
 <% end  %>
+</div>
 
+<div  class="text-center">
 <%= link_to "create a list", new_list_path  %>
+</div>
+</div>
